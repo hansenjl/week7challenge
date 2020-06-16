@@ -42,7 +42,7 @@ In your Controller, write out all 7 of the restful routes for ice creams. Try to
 
 ## Step 5
 
-In your views folder, create the 4 view files you would need if you were implementing restful routing. Think about how we go from 7 routes to only 4 views. Which routes do we not show view for?
+In your views folder, create the 4 view files you would need if you were implementing restful routing. Think about how we go from 7 routes to only 4 views. *Which routes do we not show views for?*
 
 ## Step 6
 
@@ -50,11 +50,11 @@ Add a [form](https://www.w3schools.com/html/html_forms.asp) to create new ice cr
 
 ## Step 7
 
-Before submitting the form, put a `binding.pry` in the controller action where this form will send a request to. This will be a great self-check to make sure you know where your form is sending its information.
+- Before submitting the form, put a `binding.pry` in the controller action where this form will send a request to. This will be a great self-check to make sure you know where your form is sending its information.
 
-Submit the form, and make sure it stops in the pry. Look at `params` to see the information passed through.  What kind of data type is `params`?
+- Submit the form, and make sure it stops in the pry. Look at `params` to see the information passed through.  What kind of data type is `params`?
 
-In the pry, try to use the params to create a new IceCream. Once your code is working and you are able to use the params to make an IceCream, add that code into the controller action in place of the `binding.pry`
+- In the pry, try to use the params to create a new IceCream. Once your code is working and you are able to use the params to make an IceCream, add that code into the controller action in place of the `binding.pry`
 
 ## Step 8
 
