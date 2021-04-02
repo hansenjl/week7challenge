@@ -33,6 +33,10 @@ Don't forget to migrate before moving on.
 
 ## Step 4
 
+Create some seed data. You can do this using a seeds.rb file or by starting the `rake console` and creating a few IceCream objects.
+
+## Step 5
+
 In your Controller, write out all 7 of the restful routes for ice creams. Try to do this on your own but if you get stuck, you can peek at the REST.png file. Add comments above each route to say what it will be used for. Don't worry yet about what happens inside of the routes, just set up the basic structure like this:
 ```
  # shows all the ice creams
@@ -40,15 +44,15 @@ In your Controller, write out all 7 of the restful routes for ice creams. Try to
  end
 ```
 
-## Step 5
+## Step 6
 
 In your views folder, create the 4 view files you would need if you were implementing restful routing. Think about how we go from 7 routes to only 4 views. *Which routes do we not show views for?*
 
-## Step 6
+## Step 7
 
 Add a [form](https://www.w3schools.com/html/html_forms.asp) to create new ice cream in the new.erb file. There should be a input field for each ice cream attribute and a submit button. A user should see the form if they naviagte to '/ice-creams/new' in the browser. This means you must make sure your controller action is rendering an erb file.
 
-## Step 7
+## Step 8
 
 - Before submitting the form, put a `binding.pry` in the controller action where this form will send a request to. This will be a great self-check to make sure you know where your form is sending its information.
 
@@ -56,13 +60,13 @@ Add a [form](https://www.w3schools.com/html/html_forms.asp) to create new ice cr
 
 - In the pry, try to use the params to create a new IceCream. Once your code is working and you are able to use the params to make an IceCream, add that code into the controller action in place of the `binding.pry`
 
-## Step 8
+## Step 9
 
 After creating a IceCream, redirect the user to '/ice-creams'. Add code to that controller action to do 2 things:
 1. Set an instance variable `@icecreams` to be equal to all the ice creams in the IceCream class.
 2. render the ice cream's ":index" view.
 
-## Step 9
+## Step 10
 
 In the ice creams index.erb file, add code to do the following:
 - iterate over the `@icecreams` variable
